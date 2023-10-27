@@ -1,0 +1,15 @@
+<h1 class="heading">Todo List</h1>
+<div class="add-todo">
+    <input type="text" [(ngModel)]="newTask" (keyup.enter)="addTask()" placeholder="what you want todo" />
+    <button (click)="addTask()">Add</button>
+</div>
+<div class="todo-list">
+    <div class="todo-item" *ngFor="let task of todo; let i = index">
+        <div>
+            <input type="checkbox" [(ngModel)]="task.done" (ngModelChange)="onValueChange(i)" />
+            <span [class.done]="task.done">{{ task.text }}
+            </span>
+        </div>
+        <button (click)="deleteTask(i)">Delete</button>
+    </div>
+</div>

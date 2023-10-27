@@ -1,0 +1,55 @@
+.heading {
+  text-align: center;
+}
+
+.add-todo {
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+}
+.add-todo input {
+  border-color: blue;
+  padding: 20px;
+  width: 50%;
+  border-width: 2px;
+  font-size: 18px;
+}
+
+.add-todo input::placeholder {
+  font-size: 18px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.add-todo button {
+  background-color: blue;
+  width: 100px;
+  color: white;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.todo-item {
+  border: 1px solid rgb(239, 225, 225);
+  width: 50%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 8px;
+  padding: 5px;
+}
